@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-server
+  labels:
+    name: simple-server
+spec:
+  ports:
+    # the port that this service should serve on
+  - port: 9090
+    targetPort: 9090
+  selector:
+    name: simple-server
+  # externalIPs:
+  # - 1.1.1.1
+
